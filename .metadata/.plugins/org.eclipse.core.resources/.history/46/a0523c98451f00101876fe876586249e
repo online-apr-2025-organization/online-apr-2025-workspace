@@ -1,0 +1,13 @@
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+		int num1 = 50;
+		System.out.println(num1);
+		
+		char ch = 's';
+		System.out.println(ch);
+
+	}
+
+}

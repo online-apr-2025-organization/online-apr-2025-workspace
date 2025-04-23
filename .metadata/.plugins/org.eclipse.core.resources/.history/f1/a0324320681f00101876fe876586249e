@@ -1,0 +1,38 @@
+
+public class OperatorDemo {
+
+	public static void main(String[] args) {
+		int num1 = 1000;
+		int num2 = 20;
+		
+		boolean result = num1 > num2;
+		
+		System.out.println("Is " + num1 + " greater than " + num2 + " ? " + result);
+		
+		int num3 = 200;
+		boolean result1 = num1 > num2 && num1 > num3;
+		System.out.println("Is " + num1 + " the greatest ? " + result1);
+		
+		byte num4 = 5; // 0000 0101 ---> 0000 0010 -----> 0000 0001
+		byte num5 = 3; // 0000 0011
+					   // 0000 0001
+		byte num6 = (byte) (num4 & num5);
+		System.out.println(num6);
+		
+		System.out.println(num4>>2);
+		// 5 / 2 pow 2 = 1
+		
+		int num7 = 10;
+		
+		// int num8 = ++num7; // prefix
+		int num8 = num7++; // postfix
+		System.out.println(num7);
+		System.out.println(num8);
+		
+		int mark = 20;
+		
+		String result2 = mark > 50 ? "PASS" : "FAIL";
+		System.out.println(result2);
+	}
+
+}

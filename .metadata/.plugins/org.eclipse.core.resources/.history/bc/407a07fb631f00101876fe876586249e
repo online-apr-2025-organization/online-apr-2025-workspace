@@ -1,0 +1,17 @@
+
+public class OperatorDemo {
+
+	public static void main(String[] args) {
+		int num1 = 100;
+		int num2 = 20;
+		
+		boolean result = num1 > num2;
+		
+		System.out.println("Is " + num1 + " greater than " + num2 + " ? " + result);
+		
+		int num3 = 200;
+		boolean result1 = num1 > num2 && num1 > num3;
+		System.out.println("Is " + num1 + " the greatest ? " + result1);
+	}
+
+}

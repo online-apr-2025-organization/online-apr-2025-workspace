@@ -1,0 +1,35 @@
+
+public class IfDemo {
+
+	public static void main(String[] args) {
+		// print the greater of 2 numbers
+		int a = 200;
+		int b = 200;
+		if(a > b) {
+			System.out.println(a + " is greater than " + b);
+		} else if(b > a){
+			System.out.println(b + " is greater than " + a);
+		} else {
+			System.out.println(b + " is equal to " + a);
+		}
+		
+		
+		// print if the number is odd or even
+		int num1 = 201;
+		if(num1 % 2 == 0) {
+			System.out.println(num1 + " is even.");
+		}else {
+			System.out.println(num1 + " is odd.");
+		}
+		
+		// print if a number is negative or not
+		int num2 = 10;
+		if(num2 >= 0) {
+			System.out.println(num2 + " is not negative");
+		} else {
+			System.out.println(num2 + " is positive");
+		}
+
+	}
+
+}

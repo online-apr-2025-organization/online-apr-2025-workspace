@@ -1,0 +1,22 @@
+
+public class OperatorDemo {
+
+	public static void main(String[] args) {
+		int num1 = 1000;
+		int num2 = 20;
+		
+		boolean result = num1 > num2;
+		
+		System.out.println("Is " + num1 + " greater than " + num2 + " ? " + result);
+		
+		int num3 = 200;
+		boolean result1 = num1 > num2 && num1 > num3;
+		System.out.println("Is " + num1 + " the greatest ? " + result1);
+		
+		byte num4 = 5;
+		byte num5 = 3;
+		byte num6 = (byte) (num4 & num5);
+		System.out.println(num6);
+	}
+
+}
