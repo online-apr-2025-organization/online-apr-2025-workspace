@@ -1,0 +1,26 @@
+public class Room {
+	int length;
+	int width;
+	int height;
+	
+	Room(int length, int width, int height){
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	int calculateWallArea() {
+		int wallArea = 2 * height * (length + width);
+		return wallArea;
+	}
+	
+	int calculatePaintingCost(int paintingRate) {
+		int roomWallArea = calculateWallArea();
+		int paintingCost = paintingRate * roomWallArea;
+		return paintingCost;
+	}
+	
+	int calculateFloorArea() {
+		return length * width;
+	}	
+}

@@ -1,0 +1,8 @@
+
+public class FordDemo {
+
+	public static void main(String[] args) {
+		FordFigo figo1 = new FordFigo("Hatch Back", "Diesel", "Ford Figo");
+	}
+
+}

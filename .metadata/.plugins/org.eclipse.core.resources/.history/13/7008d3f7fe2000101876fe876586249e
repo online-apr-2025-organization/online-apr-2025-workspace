@@ -1,0 +1,16 @@
+
+public class Dog extends Animal{
+
+	public Dog(String name) {
+		super(name);
+	}
+
+	@Override
+	String mobility() {
+		return name + " walks on 4 legs...";
+	}
+	
+	String friendly() {
+		return name + " is friendly...";
+	}
+}

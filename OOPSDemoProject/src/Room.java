@@ -2,6 +2,27 @@ public class Room {
 	int length;
 	int width;
 	int height;
+	String color;
+	String name;
+	
+	Room(int length, int width, int height){
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	Room(int length, int width, int height, String name){
+		this(length, width, height); // constructor chaining
+		this.name = name;
+	}
+	
+	Room(int length, int width, int height, String color, String name){
+//		this.length = length;
+//		this.width = width;
+//		this.height = height;
+		this(length, width, height, name); // constructor chaining
+		this.color = color;
+	}
 	
 	int calculateWallArea() {
 		int wallArea = 2 * height * (length + width);

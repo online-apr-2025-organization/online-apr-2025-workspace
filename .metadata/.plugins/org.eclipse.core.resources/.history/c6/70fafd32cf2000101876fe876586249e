@@ -1,0 +1,18 @@
+
+public class FordFigo {
+	String carType;
+	String color;
+	String gasType;
+	int chasisNo;
+	String carModel;
+	
+	String startCar() {
+		return carModel + " has been started...";
+	}
+	
+	String accelerate() {
+		return carModel + " has been accelerated...";
+	}
+	
+	
+}

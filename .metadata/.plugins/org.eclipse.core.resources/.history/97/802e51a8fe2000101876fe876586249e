@@ -1,0 +1,16 @@
+
+public class AnimalDemo {
+
+	public static void main(String[] args) {
+		Animal animal = new Animal("Animal");
+		System.out.println(animal.lives());
+		System.out.println(animal.mobility());
+		
+		System.out.println("----------------");
+		Dog dog = new Dog("Dog");
+		System.out.println(dog.lives());
+		System.out.println(dog.mobility());
+		System.out.println(dog.friendly());
+	}
+
+}

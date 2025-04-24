@@ -1,0 +1,25 @@
+
+public class FordDemo {
+
+	public static void main(String[] args) {
+		FordFigo figo1 = new FordFigo("Hatch Back", "Diesel", "Ford Figo");
+		figo1.color = "White";
+		
+		System.out.println(figo1.startCar());
+		System.out.println(figo1.accelerate());
+		System.out.println(figo1.applyManualBrakes());
+		System.out.println(figo1.stopCar());
+		
+		System.out.println("--------------------------------");
+		
+		FordFigoTitanium tita1 = new FordFigoTitanium("Hatch Back", "Petrol", "Ford Titanium", 2);
+		tita1.color = "Silver";
+		
+		tita1.startCar();
+		tita1.accelerate();
+		tita1.applyManualBrakes();
+		tita1.ejectAirbags();
+		tita1.stopCar();
+}
+
+}
