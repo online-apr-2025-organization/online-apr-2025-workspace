@@ -31,14 +31,18 @@ public class AnimalDemo {
 		//System.out.println(animal2.attacks());
 		
 		System.out.println("----------------");
-		Snake snake2 = (Snake) animal2; // explicit casting
-		System.out.println(snake2.lives());
-		System.out.println(snake2.mobility());
-		System.out.println(snake2.attacks());
 		
-		System.out.println("----------------");
-		Animal animal3 = snake2; // implicit casting
-		
+		if(animal2 instanceof Dog) {
+			Dog dog2 = (Dog) animal2;
+		} else if (animal2 instanceof Snake) {
+			Snake snake2 = (Snake) animal2; // explicit casting
+			System.out.println(snake2.lives());
+			System.out.println(snake2.mobility());
+			System.out.println(snake2.attacks());
+			
+			System.out.println("----------------");
+			Animal animal3 = snake2; // implicit casting
+		}
 		//instance of operator and what it is it used for?
 		
 	}

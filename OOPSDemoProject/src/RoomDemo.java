@@ -27,8 +27,11 @@ public class RoomDemo {
 //		shop.length = 300;
 //		shop.width = 200;
 //		shop.height = 150;
-		shop.color = "Light Blue";
-		shop.name = "Xerox shop";
+		//shop.color = "Light Blue";
+		shop.setColor("Light Blue");
+		//shop.name = "Xerox shop";
+		shop.setName("Xerox shop");
+		//shop.setLength(1000);
 		
 		int floorArea1 = shop.calculateFloorArea();
 		System.out.println("Floor ares of shop : " + floorArea1);
