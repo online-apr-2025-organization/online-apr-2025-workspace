@@ -1,10 +1,15 @@
 public class Room {
 	private int length;
 	private int width;
-	private int height;
+	static private int height;
 	private String color;
 	private String name;
 	
+	static {
+		height = 100;
+	}
+	
+	// remove height initialization through constructors
 	Room(int length, int width, int height){
 		this.length = length;
 		this.width = width;

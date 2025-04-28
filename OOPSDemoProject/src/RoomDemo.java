@@ -23,10 +23,10 @@ public class RoomDemo {
 		//office = 0;
 		//office = null;
 		
-		Room shop = new Room(300,200,150);
+		Room shop = new Room(300,200,100);
 //		shop.length = 300;
 //		shop.width = 200;
-//		shop.height = 150;
+//		shop.height = 100;
 		//shop.color = "Light Blue";
 		shop.setColor("Light Blue");
 		//shop.name = "Xerox shop";
@@ -39,7 +39,7 @@ public class RoomDemo {
 		int paintingCost1 = shop.calculatePaintingCost(3);
 		System.out.println("Cost of painting the shop is " + paintingCost1);
 		
-		Room livingRoom = new Room(100, 60, 30, "Off-White", "Living Room");
+		Room livingRoom = new Room(100, 60, 100, "Off-White", "Living Room");
 		
 	}
 
