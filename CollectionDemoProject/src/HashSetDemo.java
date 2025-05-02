@@ -38,7 +38,23 @@ public class HashSetDemo {
 		// remove objects from the collection all fruits whose length is not equal to 6
 		allFruits.removeIf((data) -> data.length() !=6);
 		allFruits.forEach((data) -> System.out.println(data));
+		System.out.println("------------");
 		
 		
+		MobilePhone phone1 = new MobilePhone("IPhone16", 2024);
+		MobilePhone phone2 = new MobilePhone("Samsung Galaxy S24", 2024);
+		MobilePhone phone3 = new MobilePhone("IPhone16", 2024);
+		MobilePhone phone4 = new MobilePhone("Motorola", 2023);
+		//MobilePhone phone5 = phone1;
+		
+		Set<MobilePhone> allPhones = new HashSet<MobilePhone>();
+		allPhones.add(phone1);
+		allPhones.add(phone2);
+		allPhones.add(phone3);
+		allPhones.add(phone4);
+		//allPhones.add(phone5);
+		
+		allPhones.forEach((data) -> System.out.println(data));
+		// whenever we print the object reference variable, it internally/ automatically calls toString() method
 	}
 }

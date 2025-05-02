@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class ArrayListDemo {
 
@@ -32,6 +34,19 @@ public class ArrayListDemo {
 		for(String eachCountry: list3) {
 			System.out.println(eachCountry);
 		}
+		System.out.println("-----------");
+		MobilePhone phone1 = new MobilePhone("IPhone16", 2024);
+		MobilePhone phone2 = new MobilePhone("Samsung Galaxy S24", 2024);
+		MobilePhone phone3 = new MobilePhone("IPhone16", 2024);
+		MobilePhone phone4 = new MobilePhone("Motorola", 2023);
+		
+		List<MobilePhone> allPhones = new ArrayList<MobilePhone>();
+		allPhones.add(phone1);
+		allPhones.add(phone2);
+		allPhones.add(phone3);
+		allPhones.add(phone4);
+	
+		allPhones.forEach((data) -> System.out.println(data));
 		
 	}
 
