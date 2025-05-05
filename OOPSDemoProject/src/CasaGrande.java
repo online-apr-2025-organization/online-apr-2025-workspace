@@ -1,6 +1,5 @@
-
 public class CasaGrande implements SafetyGuidelines2021 {
-
+ 
 	@Override
 	public String protectHead() {
 		return "Protected with steel helmets of " + HEAD_GEAR_THICKNESS + " mm thickness...";
