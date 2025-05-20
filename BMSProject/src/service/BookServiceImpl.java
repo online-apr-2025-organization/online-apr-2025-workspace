@@ -4,6 +4,7 @@ import java.util.List;
 
 import dao.BookDao;
 import dao.BookDaoCollectionImpl;
+import dao.BookDaoDatabaseImpl;
 import pojo.BookPojo;
 
 public class BookServiceImpl{
@@ -11,7 +12,8 @@ public class BookServiceImpl{
 	BookDao bookDao;
 	
 	public BookServiceImpl(){
-		bookDao = new BookDaoCollectionImpl();
+//		bookDao = new BookDaoCollectionImpl();
+		bookDao = new BookDaoDatabaseImpl();
 	}
 
 	public List<BookPojo> getAllBooks() {
