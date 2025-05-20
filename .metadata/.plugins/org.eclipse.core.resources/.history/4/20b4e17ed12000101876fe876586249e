@@ -1,8 +1,0 @@
-
-public class FordFigoTitanium extends FordFigo{
-	int noOfAirbags;
-	
-	String ejectAirbags() {
-		return carModel + " has ejected airbags...";
-	}
-}
